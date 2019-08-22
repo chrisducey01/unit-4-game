@@ -2,22 +2,30 @@
 <html>
 
 <head>
-    <title>###</title>
+    <title>Crystal Collector</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12">
-                <h1>Crystal Collector Game</h1>
-            </div>
+    <div class="jumbotron jumbotron-fluid game-color m-0">
+        <div class="container">
+            <h1 class="display-4">Crystal Collector Game</h1>
+            <p class="lead">Each one of the crystals below has a hidden value. Click on a crystal to add that value to
+                your
+                total score. To win the game you need to make your score match the score value the computer chooses. If
+                you
+                go over the computer's score then you lose the game and start a new one. May the odds be ever in your
+                favor.</p>
         </div>
+    </div>
+    <div class="container text-center game-color m-0">
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -40,10 +48,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid game-color m-0 py-3">
         <div class="row">
+            <div class="col-2"></div>
             <div class="col">
                 <div class="row">
-                    <h2>Score to reach: <span id="scoreToReach"></span></h2>
+                    <h2 class="text-center">Score to reach: <span id="scoreToReach"></span></h2>
                 </div>
                 <div class="row">
                     <h2>Your Score: <span id="userScore"></span></h2>

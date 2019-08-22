@@ -2,3 +2,8 @@ img{
     width: 200px;
     height: 200px;
 }
+
+.game-color{
+    background-color: lightslategray !important;
+    color: darkorange !important;
+}
