@@ -1,16 +1,8 @@
 img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .game-color{
     background-color: lightslategray !important;
     color: darkorange !important;
-}
-
-@media only screen and (max-width: 978px){
-    img{
-        width: 100px;
-        height: 100px;
-    }
 }
