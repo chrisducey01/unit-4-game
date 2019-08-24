@@ -7,3 +7,10 @@ img{
     background-color: lightslategray !important;
     color: darkorange !important;
 }
+
+@media only screen and (max-width: 978px){
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -14,58 +14,62 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid game-color m-0">
-        <div class="container">
-            <h1 class="display-4">Crystal Collector Game</h1>
-            <p class="lead">Each one of the crystals below has a hidden value. Click on a crystal to add that value to
-                your
-                total score. To win the game you need to make your score match the score value the computer chooses. If
-                you
-                go over the computer's score then you lose the game and start a new one. May the odds be ever in your
-                favor.</p>
+
+    <div class="container text-center game-color m-auto pb-3">
+        <div class="jumbotron jumbotron-fluid game-color m-0">
+            <div class="container">
+                <h1 class="display-4">Crystal Collector Game</h1>
+                <p class="lead">Each one of the crystals below has a hidden value. Click on a crystal to add that value
+                    to
+                    your
+                    total score. To win the game you need to make your score match the score value the computer chooses.
+                    If
+                    you
+                    go over the computer's score then you lose the game and start a new one. May the odds be ever in
+                    your
+                    favor.</p>
+            </div>
         </div>
-    </div>
-    <div class="container text-center game-color m-0">
         <div class="row">
-            <div class="col">
+            <div class="col-6 col-lg-3 mb-3">
                 <div class="card">
                     <img src="assets/images/crystal1.jpg" class="card-img-top" id="crystal1" alt="Crystal Image #1">
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3">
                 <div class="card">
                     <img src="assets/images/crystal2.jpg" class="card-img-top" id="crystal2" alt="Crystal Image #2">
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3">
                 <div class="card">
                     <img src="assets/images/crystal3.jpg" class="card-img-top" id="crystal3" alt="Crystal Image #3">
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3">
                 <div class="card">
                     <img src="assets/images/crystal4.jpg" class="card-img-top" id="crystal4" alt="Crystal Image #4">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid game-color m-0 py-3">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col">
-                <div class="row">
-                    <h2 class="text-center">Score to reach: <span id="scoreToReach"></span></h2>
-                </div>
-                <div class="row">
-                    <h2>Your Score: <span id="userScore"></span></h2>
-                </div>
+        <div class="card text-center my-3">
+            <div class="card-header h1 game-color">
+                Scoreboard
             </div>
-            <div class="col">
+            <div class="card-body">
                 <div class="row">
-                    <h2>Total Wins: <span id="wins"></span></h2>
-                </div>
-                <div class="row">
-                    <h2>Total Losses: <span id="losses"></span></h2>
+                    <div class="col-3 text-center">
+                            <h3 class="text-center">Score to reach: <span id="scoreToReach"></span></h3>
+                    </div>
+                    <div class="col-3 text-center">
+                        <h3>Your Score: <span id="userScore"></span></h3>
+                    </div>
+                    <div class="col-3 text-center">
+                            <h3>Total Wins: <span id="wins"></span></h3>
+                    </div>
+                    <div class="col-3">
+                         <h3>Total Losses: <span id="losses"></span></h3>
+                    </div>
                 </div>
             </div>
         </div>
