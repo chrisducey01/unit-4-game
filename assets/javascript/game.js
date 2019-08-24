@@ -41,16 +41,17 @@ function updateUI(){
     $("#losses").text(crystalCollector.losses);
 }
 
-function checkScore(){
+function checkScore(addValue){
+    crystalCollector.userScore += addValue;
     $("#userScore").text(crystalCollector.userScore);
 
     if(crystalCollector.userScore > crystalCollector.scoreToReach){
-        alert("YOU LOST THE GAME DUMBASS");
+        alert("Sorry you lose!  Your guess went over the score to reach.");
         crystalCollector.losses++;
         initGameTurn();
     }
     else if(crystalCollector.userScore == crystalCollector.scoreToReach){
-        alert("YOU WON THE GAME KING");
+        alert("Congratulations you won!");
         crystalCollector.wins++;
         initGameTurn();
     }
@@ -61,23 +62,19 @@ $(document).ready(function(){
 });
 
 $("#crystal1").click(function(){
-    crystalCollector.userScore += crystalCollector.crystal1;
-    checkScore();
+    checkScore(crystalCollector.crystal1);
 });
 
 $("#crystal2").click(function(){
-    crystalCollector.userScore += crystalCollector.crystal2;
-    checkScore();
+    checkScore(crystalCollector.crystal2);
 });
 
 $("#crystal3").click(function(){
-    crystalCollector.userScore += crystalCollector.crystal3;
-    checkScore();
+    checkScore(crystalCollector.crystal3);
 });
 
 $("#crystal4").click(function(){
-    crystalCollector.userScore += crystalCollector.crystal4;
-    checkScore();
+    checkScore(crystalCollector.crystal4);
 });
 
 
