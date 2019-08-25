@@ -2,6 +2,10 @@ img{
     width: 100%;
 }
 
+.card-img-top:hover{
+    transform: scale(.97);
+}
+
 .game-color{
     background-color: lightslategray !important;
     color: darkorange !important;
