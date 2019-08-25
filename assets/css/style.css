@@ -2,7 +2,7 @@ img{
     width: 100%;
 }
 
-.card-img-top:hover{
+.card-img-top:active{
     transform: scale(.97);
 }
 
