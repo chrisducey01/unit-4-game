@@ -6,3 +6,9 @@ img{
     background-color: lightslategray !important;
     color: darkorange !important;
 }
+
+@media only screen and (max-width: 576px){
+    .score-text{
+        font-size: 1.25rem;
+    }
+}
