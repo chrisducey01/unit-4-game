@@ -4,8 +4,8 @@ var crystalCollector = {
     crystal2: 0,
     crystal3: 0,
     crystal4: 0,
-    scoreToReach: 0,
-    userScore: 0,
+    scoreToReach: 0,   //random number that user has to get to
+    userScore: 0,      //user's score after each click on a crystal
     wins: 0,
     losses: 0,
 
@@ -25,11 +25,16 @@ function initGame(){
 }
 
 function initGameTurn(){
+    //Get random numbers for each of the 4 crystals.  Number range from 1-19
     crystalCollector.crystal1 = crystalCollector.randomNumberGenerator(1,19);
     crystalCollector.crystal2 = crystalCollector.randomNumberGenerator(1,19);
     crystalCollector.crystal3 = crystalCollector.randomNumberGenerator(1,19);
     crystalCollector.crystal4 = crystalCollector.randomNumberGenerator(1,19);
+
+    //Get random number for the score the user is to reach.  Number range from 19-120
     crystalCollector.scoreToReach = crystalCollector.randomNumberGenerator(19,120);
+
+    //Set the user's score to 0 at the beginning so they can start guessing
     crystalCollector.userScore = 0;
     updateUI();
 }
